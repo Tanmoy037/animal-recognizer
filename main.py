@@ -14,7 +14,7 @@ os.environ.setdefault("REQUESTS_CA_BUNDLE", certifi.where())
 model = InceptionV3(weights='imagenet')
 
 # Load and preprocess your image
-img_path = '/Users/tanmoy/development/image-recognition/images (4).jpeg'
+img_path = 'image.jpg'  # Replace with your image file path
 img = image.load_img(img_path, target_size=(299, 299))  # InceptionV3 needs 299x299
 img_array = image.img_to_array(img)
 img_array = np.expand_dims(img_array, axis=0)
